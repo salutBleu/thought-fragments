@@ -10,10 +10,10 @@ canvas.height = canvasHeight;
 let intervalId;
 let shapes = []; // 도형 배열
 
-// 범위 내에서 랜덤한 숫자를 생성하는 함수
+// 범위 내에서 랜덤한 숫자를 생성하는 함수(순수 함수)
 const getRandomNumber = (max) => Math.floor(Math.random() * max);
 
-// 비눗방울 객체 생성
+// 비눗방울 객체 생성(순수 함수)
 const createBubble = () => {
     const x = getRandomNumber(canvasWidth);
     const y = getRandomNumber(canvasHeight);
@@ -30,7 +30,7 @@ const createBubble = () => {
     };
 };
 
-// 도형을 그리는 함수
+// 도형을 그리는 함수(순수 함수)
 const drawShapes = () => {
     context.clearRect(0, 0, canvasWidth, canvasHeight);
 
@@ -44,7 +44,7 @@ const drawShapes = () => {
     }
 };
 
-// 도형 위치 업데이트 함수
+// 도형 위치 업데이트 함수(순수 함수)
 const updateShapesPosition = () => {
     for (let i = 0; i < shapes.length; i++) {
         const shape = shapes[i];
@@ -70,7 +70,7 @@ const updateShapesPosition = () => {
     }
 };
 
-// 애니메이션 프레임 업데이트 함수
+// 애니메이션 프레임 업데이트 함수(순수 함수)
 const updateAnimation = () => {
     drawShapes();
     updateShapesPosition();
@@ -79,7 +79,7 @@ const updateAnimation = () => {
 
 // 시작 버튼에 클릭 이벤트 리스너 추가
 startButton.addEventListener("click", () => {
-    startButton.textContent = '▶️▶️'
+    startButton.textContent = 'quickly'
     if (!intervalId) {
         // 도형 배열 초기화
         shapes = [];

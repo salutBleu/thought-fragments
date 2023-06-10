@@ -8,3 +8,6 @@
 .
 └── canvas # Canvas API, JS
 ```
+
+## Concept 
+- [Canvas](https://github.com/salutBleu/thought-fragments/tree/master/canvas/README.md)
