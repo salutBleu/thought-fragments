@@ -78,8 +78,23 @@ const updateAnimation = () => {
 };
 
 // 시작 버튼에 클릭 이벤트 리스너 추가
-startButton.addEventListener("click", () => {
-    startButton.textContent = 'quickly'
+startButton.addEventListener("click", (e) => {
+    startButton.textContent = 'Quickly'
+    
+    // Ripple 효과
+    const ripple = document.createElement("div");
+    const rect = startButton.getBoundingClientRect();
+    
+    ripple.className = "animate",
+    ripple.style.left = `${e.x - rect.left}px`,
+    ripple.style.top = `${e.y - rect.top}px`,
+    ripple.style.background = `#${startButton.dataset.color !== undefined ? startButton.dataset.color : "333"}`,
+    ripple.style.setProperty("--scale", startButton.offsetWidth),
+    startButton.append(ripple),
+    setTimeout(function () {
+        ripple.parentNode.removeChild(ripple)
+    }, 500)
+
     if (!intervalId) {
         // 도형 배열 초기화
         shapes = [];
