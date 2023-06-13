@@ -13,5 +13,5 @@
 <br>
 
 ## Concept 
-- [Calculator](https://github.com/salutBleu/thought-fragments/calculator/)
-- [Canvas](https://github.com/salutBleu/thought-fragments/canvas/README.md)
+- [Calculator](https://github.com/salutBleu/thought-fragments/tree/master/calculator)
+- [Canvas](https://github.com/salutBleu/thought-fragments/tree/master/canvas)
