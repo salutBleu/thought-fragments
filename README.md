@@ -6,10 +6,12 @@
 ## Structure
 ```bash
 .
-└── canvas # Canvas API, JS
+├── calculator # JS, TailwindCSS | Object-oriented programming
+└── canvas # Canvas API, JS, CSS | Functional Programming
 ```
 
 <br>
 
 ## Concept 
-- [Canvas](https://github.com/salutBleu/thought-fragments/tree/master/canvas/README.md)
+- [Calculator](https://github.com/salutBleu/thought-fragments/calculator/)
+- [Canvas](https://github.com/salutBleu/thought-fragments/canvas/README.md)
